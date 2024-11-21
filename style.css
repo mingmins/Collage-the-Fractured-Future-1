@@ -1,0 +1,92 @@
+body {
+   ont-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0px;
+    background-image: url('배경 시도.png'); 
+    background-size: fixed;
+    background-position: center;
+}
+
+
+
+#dynamic-heading {
+    font-family: 'Teko', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 0px;
+}
+
+p { font-family: 'Teko', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+
+}
+
+
+
+
+#button-container {
+    position: fixed;
+    top: 30%;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#take-photo-button{
+     position: fixed;
+    top: 20%;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    width: 150px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+}
+
+#camera {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+
+
+#puzzle-board {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    border: 2px dashed #ccc;
+    background: rgba(128, 128, 128, 0.5)
+}
+
+.piece {
+    position: absolute;
+    cursor: grab;
+    background-size: 400px 400px; /* 원본 퍼즐 크기에 맞게 설정 */
+    border: 1px solid #ccc;
+    transition: transform 0.2s ease;
+}
+
+.piece:active {
+    cursor: grabbing;
+    transform: scale(1.1);
+}
