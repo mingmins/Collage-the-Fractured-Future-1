@@ -241,7 +241,9 @@ function closePopup() {
     document.querySelectorAll('.piece').forEach((piece) => piece.remove());
 }
 
-document.getElementById('popup-close-button').addEventListener('click', closePopup);
+document.getElementById('popup-close-button').addEventListener('click', () => {
+        location.reload();
+    });
 
 
 
